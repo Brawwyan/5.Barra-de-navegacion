@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        *{margin: 0;
+        box-sizing: border-box;}
+        body{
+            font-family: Oswald;
+        }
+        nav {
+            background-color: midnightblue;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover{
+            color: red;
+            font-weight: bold;
+            text-shadow: 3px 3px 5px white;
+        }
+        header{
+            background-image: url(Images/business.jpg);
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #titular{
+            text-align: center;
+        }
+        #titular h1{
+            text-shadow: 3px 3px 5px black;
+            color: white;
+            font-size: 3em;
+        }
+        #titular h2{
+            color: orange;
+            text-shadow: 3px 3px 5px black;
+        }
+        section#nuestros-clientes{
+            text-align: center;
+            padding: 20px;
+        }
+        section#nuestros-clientes img{
+            border-radius: 50%;
+        }
+        .titulo{
+            color: purple;
+            font-size: 0,9em;
+        }
+        footer{
+            background-color: grey;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: space-around;
+        }
+        footer #caja-superior{
+            width: 100%;
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding: 10px;
+        }
+        footer #caja-inferior{
+            width: 33%;
+            padding: 10px;
+        }
+        footer a{
+            text-decoration: none;
+            color: white;
+        }
+        #contenedor-quienes{
+            display: flex;
+        }
+        #contenedor-quienes #izqu{
+            width: 50%;
+        }
+        #contenedor-quienes #der{
+            width: 50%;
+            text-align: center;
+        }
+        #contenedor-quienes #der img{
+            width: 50%;
+        }
+        .titulo{
+            color: brown;
+            text-align: center;
+        }
+        section#quienes-somos{
+            padding: 20px;
+        }
+        section#obras{
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+        #contenedor-obras{
+            border: 2px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .obras{
+            width: 30%;
+            border: 2px solid blue;
+            text-align: center;
+        }
+        .obras img{
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#Quienes-Somos">Quienes somos</a>
+        <a href="#">Consultorio</a>
+        <a href="#">Diseño web</a>
+        <a href="#">Donde estamos</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <header>
+        <div id="titular">
+            <h1>Bosco Business</h1>
+            <h2>Tu puerta al futuro</h2>
+        </div>
+    </header>
+    <section id="nuestros-clientes">
+        <h2 class="titulo">
+            Nuestros Clientes
+        </h2>
+        <img src="Images/chica.jpg" alt="">
+        <h4>Bosco es la solucion para mi empresa</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto omnis fuga sunt facilis nulla ratione soluta, provident impedit praesentium deleniti ipsam voluptatum vitae sint, dicta, natus fugit repudiandae eum. Libero! </p>
+    </section>
+    <section id="Quienes-Somos">
+        <h1 class="titulo">Quienes somos</h1>
+        <div id="contenedor-quienes">
+            <div id="izqu">
+                <h1>Un equipo multidispplicinar y profesional</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ex, reprehenderit perspiciatis molestiae qui veritatis quis magni aliquid repudiandae est, ratione laudantium, quas perferendis tempore? Recusandae consectetur commodi eligendi tempora?</p>
+                <p></p>
+            </div>
+            <div id="der">
+                <img src="Images/quipoarquitectos.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="obras">
+        <h1 class="titulo">obras</h1>
+        <div id="contenedor-obras">
+            <div class="obras">
+                <img src="Images/casa.jpeg" alt="">
+                <p>Sevilla</p>
+            </div>
+            <div class="obras">
+                <img src="Images/casa.jpeg" alt="">
+                <p>Sevilla</p>
+            </div>
+            <div class="obras">
+                <img src="Images/casa.jpeg" alt="">
+                <p>Sevilla</p>
+            </div>
+            <div class="obras">
+                <img src="Images/casa.jpeg" alt="">
+                <p>Sevilla</p>
+            </div>
+            <div class="obras">
+                <img src="Images/casa.jpeg" alt="">
+                <p>Sevilla</p>
+            </div>
+            <div class="obras">
+                <img src="Images/casa.jpeg" alt="">
+                <p>Sevilla</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p id="caja-superior">&copy;2024 Bosco Desing S.L.</p>
+        <p id="caja-superior">Contactate con nosotros. Trabajamos los 365 dias del año </p>
+        <div class="caja-inferior">
+            <h2>Enlaces</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="caja-inferior">
+            <h2>Estamos en </h2>
+            <p>Avda.Los institutos</p>
+            <p>13600 Alcazar de San Juan</p>
+        </div>
+        <div class="caja-inferior">
+            <h2>Email</h2>
+            <p>agora@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
