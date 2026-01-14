@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/b241da6d19.js" crossorigin="anonymous"></script>
     <style>
         *{
             box-sizing: border-box;
@@ -45,7 +46,37 @@
         #contenedor-quines-somos p {
             font-size: 3em;
         }
+        #nuestros-servicios{
+            background-color: white;
+        }
+        .nuestros-servicios{
+            color: blue;
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 10px;
+            font-size: 4em;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .nuestros-servicios :hover{
+            opacity: 0.5;
+        }
+        .titulo{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            padding: 10px;
+        }
         @media screen and (min-width:768px){
+            #contenedor-nuestros-servicios{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .nuestros-servicios{
+                width: 45%;
+            }
             body{
                 background-color: lightpink;
             }
@@ -62,6 +93,7 @@
             #contenedor-quienes-somos{
             display: flex;
             }
+
         }
         @media screen and (min-width:1200px){
             body{
@@ -79,7 +111,7 @@
         <a href="#donde-estamos">Donde estamos </a>
         <a href="#nuestros-clientes">Nuestros Clientes</a>
     </nav>
-    <sectiom id="quienes-somos">
+    <section id="quienes-somos">
         <h1 class="titulo">
             Quienes somos
         </h1>
@@ -87,6 +119,38 @@
             <img src="Images/gente.jpeg" alt="">
             <p>Somos una empresa joven y dinamica Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sit praesentium! Eligendi eos sint mollitia facilis autem quam iure dolores voluptas, nostrum magnam sit voluptatibus officia, aliquam culpa, sequi libero?</p>
         </div>
-    </sectiom>
+    </section>
+    <section id="nuestros-servicios">
+        <h1 class="titulo">
+            Nuestros servicios
+        </h1>
+    <div id="contenedor-nuestros-servicios">
+        <div class="nuestros-servicios">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <p>Servicio tecnico</p>
+        </div>
+        <div class="nuestros-servicios">
+            <i class="fa-solid fa-phone"></i>
+            <p>Atencion al telefono</p>
+        </div>
+        <div class="nuestros-servicios">
+            <i class="fa-solid fa-truck"></i>
+            <p>Servicio adomicirio</p>
+        </div>
+        <div class="nuestros-servicios">
+            <i class="fa-solid fa-car"></i>
+            <p>Vehiculo de sustitucion</p>
+        </div>
+        <div class="nuestros-servicios">
+            <i class="fa-solid fa-info"></i>
+            <p>Mas Informacion</p>
+        </div>
+        <div class="nuestros-servicios">
+            <i class="fa-solid fa-info"></i>
+            <p>Mas Informacion</p>
+        </div>
+    </div>
+    </section>
+    <a href="index.html">Volver</a>
 </body>
 </html>
